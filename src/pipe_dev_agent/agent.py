@@ -31,6 +31,7 @@ from pipe_dev_agent.checkpoint import get_ephemeral_checkpointer
 from pipe_dev_agent.model import default_model_factory, default_summarizer_factory
 from pipe_dev_agent.progress import extract_progress
 from pipe_dev_agent.tools.handoff import make_handoff_tool
+from pipe_dev_agent.tools import ToolRegistry
 from pipe_dev_agent.types import (
     DevResult,
     DevState,
@@ -38,7 +39,6 @@ from pipe_dev_agent.types import (
     HandoffPayload,
     HeartbeatCallback,
     ModelFactory,
-    ToolRegistry,
 )
 
 MAX_TURNS_PER_DEV = 1000
